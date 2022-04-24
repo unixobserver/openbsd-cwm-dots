@@ -1,9 +1,7 @@
 # openbsd-cyberpunk-dots
 My personal CWM configuration for OpenBSD. Minimal and full black!!
 
-![openbsd](bsd.png)
-
-![openbsd2](bsd2.png)
+![openbsd](OpenBSD.png)
 
 1. You will need a OpenBSD installation.
 2. Clone the repo as user in to your home dir: `git clone https://github.com/unixobserver/openbsd-cyberpunk-dots.git` 

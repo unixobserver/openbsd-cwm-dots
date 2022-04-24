@@ -1,5 +1,5 @@
 # openbsd-cyberpunk-dots
-My personal DWM configuration for OpenBSD. Minimal and full black!!
+My personal CWM configuration for OpenBSD. Minimal and full black!!
 
 ![openbsd](bsd.png)
 

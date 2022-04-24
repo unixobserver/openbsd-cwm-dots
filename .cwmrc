@@ -1,0 +1,92 @@
+# Theme Settings
+borderwidth 0
+color activeborder "#000000"
+color inactiveborder "#000000"
+color menubg "#000000"
+color menufg "#44475a"
+color font "#f8f8f2"
+color selfont "#f8f8f2"
+gap 20 20 20 20
+
+# Set Font
+fontname "Spleen:size=14"
+
+# Turn on sticky-group mode
+sticky yes
+
+# Keybindings
+# (firstly unbind the defaults - I am not quite a fan)
+# C = Control, M = ALT, S = Shift, 4 = Mod4 (Windows Key)
+unbind-key all
+#unbind-key CMS-q
+#unbind-key CM-f
+#unbind-key M-Return
+# Basic Keybindings
+bind-key 4S-q			power
+bind-key 4S-r			restart
+bind-key 4-Return		"st -g 101x30" 
+bind-key 4S-Return		"dmenu_run"
+# Windows movements
+bind-key 4S-Down		window-vmaximize
+bind-key 4S-Up 		    window-hmaximize
+bind-key 4-z			window-vtile
+bind-key 4-Down 		window-maximize
+bind-key 4-Up 		    window-maximize
+bind-key 4-x			window-htile
+bind-key 4-Left	        window-snap-left
+bind-key 4-Right		window-snap-right
+bind-key 4-f			window-fullscreen
+bind-key 4-q			window-close
+bind-key 4-j			window-cycle
+bind-key 4-Tab			window-cycle
+bind-key 4S-Left		window-vmaximize
+bind-key 4S-Right		window-vmaximize
+bind-key 4-k			window-rcycle
+bind-key 4-1			group-only-1
+bind-key 4-2			group-only-2
+bind-key 4-3			group-only-3
+bind-key 4-4			group-only-3
+bind-key 4S-1			window-movetogroup-1
+bind-key 4S-2			window-movetogroup-2
+bind-key 4S-3			window-movetogroup-3
+bind-key 4S-4			window-movetogroup-3
+bind-key 4-s			window-stick
+
+# Application Keybindings
+bind-key 4-w			chrome
+bind-key 4-i			"st -g 101x33 -e htop"
+bind-key 4S-i			mycpu
+bind-key 4-g			gimp
+bind-key 4-o 			"st -g 101x34 -e orca" 
+bind-key 4S-o 			lmms 
+bind-key 4-grave		scrot
+bind-key 4-m			"st -g 101x33 -e ncmpcpp"
+bind-key 4S-m			movies
+bind-key 4-n			"st -g 101x34 -e newsboat"
+bind-key 4S-n			"st -g 101x34 -e vim /home/myst/Documents/notes/notes.md"
+bind-key 4-p			"nsxiv -t -b  /home/myst/Pictures/Wallpapers"
+bind-key 4S-p			"st -g 101x33 -e cmixer"
+
+# My Custom Script Keybindings
+bind-key 4-e			"st -g 101x34 -e fff"
+bind-key 4S-e			pcmanfm
+bind-key 4S-w			myweather
+bind-key 4-c			center
+bind-key 4-t			time_date
+bind-key 4-bracketleft  voldown
+bind-key 4S-bracketleft execscripts
+bind-key 4-bracketright	volup
+bind-key 4S-bracketright wall-select
+bind-key 4-F5		    dmenumount
+bind-key 4S-F5          dmenuumount
+bind-key 4-F6		    rec
+bind-key 4S-F6          killrec
+
+# Mouse Keybindings
+bind-mouse 4-1			window-move
+bind-mouse 4-3			window-resize
+
+# Applications Menu
+command Browser qutebrowser
+command GIMP gimp
+command 0AD 0ad

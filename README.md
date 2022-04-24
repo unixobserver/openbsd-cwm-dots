@@ -3,15 +3,18 @@ My personal CWM configuration for OpenBSD. Please read first the Wiki and the in
 
 ![openbsd](OpenBSD.png)
 
+##Instructions
+
 1. You will need a OpenBSD installation.
-2. Clone the repo as user in to your home dir: `git clone https://github.com/unixobserver/openbsd-cyberpunk-dots.git` 
+2. Clone the repo as user in to your home dir: `git clone https://github.com/unixobserver/openbsd-cwm-dots.git` 
 3. Run in terminal as root `vi /etc/doas.conf` and add the following line `permit persist username keepenv as root` and save it. Don't forget to change the word `username` with your user.
-4. cd ~/openbsd-cyberpunk-dots folder and run on terminal `doas pkg_add -l programs`
-5. Copy all files from ~/openbsd-cyberpunk-dots on to your home directory ~/
+4. cd ~/openbsd-cwm-dots folder and run on terminal `doas pkg_add -l programs`
+5. Copy all files from ~/openbsd-cwm-dots on to your home directory ~/
 6. Run in terminal  `cd ~/.local/suckless/st-flexipatch` and run `doas make clean install`.
 7. Run in terminal `chmod +x ~/.local/bin/*` and `xdg-user-dirs-update`. Put your songs in the Music folder and run `mpc update`  and` mkdir ~/Videos/movie`s and put inside your movies.
 8. Unzip `.themes.zip` and `.icons.zip` in to your home folder. `rm -rf .themes.zip .icons.zip`
-9. Enjoy!!
+9. Study the files in the etc folder from openbsd-cwm-dots. Customize your own based on these. Be careful not to copy them to your own folder especially the fstab which corresponds to my ssd disk
+10. Enjoy!!
 
 ## Basic Shortcuts
 

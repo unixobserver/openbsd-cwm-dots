@@ -3,7 +3,7 @@ My personal CWM configuration for OpenBSD. Please read first the Wiki and the in
 
 ![openbsd](OpenBSD.png)
 
-##Instructions
+## Instructions
 
 1. You will need a OpenBSD installation.
 2. Clone the repo as user in to your home dir: `git clone https://github.com/unixobserver/openbsd-cwm-dots.git` 

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+	
+doas mount /dev/sd1i  ~/.usb  & st -e fff ~/.usb &
+
+notify-send "Usb stick mounted"
+	}
+
+

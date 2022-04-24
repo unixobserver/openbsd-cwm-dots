@@ -1,0 +1,4 @@
+#!/bin/sh
+
+curl  -sf wttr.in/Piraeus?format=3
+

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Prints the current volume or 🔇 if muted.
+
+
+[ $(sndioctl | grep output.mute=1)  ] && echo 🔇 && exit
+
+vol="$(sndioctl -n output.level | xargs -I % bc -e 'scale=1; (100 * %)/1')"  && echo 🔊"$vol"
+
+

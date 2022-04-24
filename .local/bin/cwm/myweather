@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+weather=$(curl  -sf wttr.in/Piraeus?format=3)
+
+
+notify-send "$weather" 
+
+

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+### FOR OpenBSD ###
+sndioctl output.level=-0.1 &
+ 
+vol="$(sndioctl -n output.level | xargs -I % bc -e 'scale=1; (100 * %)/1')"
+
+notify-send -t 925 "Volume:$vol"
+
+

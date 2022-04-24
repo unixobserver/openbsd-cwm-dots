@@ -1,0 +1,3 @@
+#!/bin/sh
+
+doas umount ~/.usb & notify-send "Usb stick Unmounted"

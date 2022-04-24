@@ -1,0 +1,9 @@
+#!/bin/sh
+
+mem=$(top -b | grep "^Memory" | awk -F: '{ print $3 }' | awk -F/ '{ print $1 }' | awk '{ print $1 }' | sed 's/M//g')
+
+#mem=$(free | awk 'FNR == 2 {print $3}'| sed 's/-//g')
+
+echo "Used Mem:$mem Mb"
+
+

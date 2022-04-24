@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# Dmenu Logout Script
+#
+
+choice=$(echo -e "logout\nlock\nreboot\npoweroff\n"| \
+  dmenu )
+
+case "$choice" in
+  logout)    pkill cwm    ;;
+  lock)      slock     ;;
+  reboot)    doas reboot  ;;
+  poweroff)  doas shutdown -p now  ;;
+esac

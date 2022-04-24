@@ -1,5 +1,5 @@
 # openbsd-cwm-dots
-My personal CWM configuration for OpenBSD. Please read first the Wiki and intructions!!
+My personal CWM configuration for OpenBSD. Please read first the Wiki and the instructions!!
 
 ![openbsd](OpenBSD.png)
 

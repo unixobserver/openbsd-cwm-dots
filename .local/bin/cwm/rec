@@ -1,6 +1,6 @@
 #!/bin/sh
 
-notify-send "Recording" &
+notify-send "壘Recording Screen" &
 videoName=$(date +"%m_%d_%M_%Y")
 
 

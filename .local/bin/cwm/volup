@@ -4,4 +4,4 @@
 sndioctl output.level=+0.1 &
 vol="$(sndioctl -n output.level | xargs -I % bc -e 'scale=1; (100 * %)/1')"
 
-notify-send -t 925 "Volume:$vol"
+notify-send -t 925 "蓼 Volume:$vol"

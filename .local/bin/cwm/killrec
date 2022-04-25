@@ -5,7 +5,7 @@
 # 
 #    -f sndio -i snd/0.mon \
 
- notify-send "Stop Recording" &
+ notify-send " Stop Recording" &
 
 pkill ffmpeg 
 

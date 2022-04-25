@@ -1,9 +1,10 @@
-#!/bin/sh
+ #!/bin/sh
 
 	
-doas mount /dev/sd1i  ~/.usb  & st -e fff ~/.usb &
+doas mount /dev/sd2i  ~/.usb  & st -e fff ~/.usb &
 
-notify-send "Usb stick mounted"
-	}
+notify-send " Usb stick mounted"
+	
 
 
+         

@@ -8,5 +8,6 @@ mem=$(top -b | grep "^Memory" | awk -F: '{ print $3 }' | awk -F/ '{ print $1 }' 
 
 temp=$(sysctl hw.sensors.cpu0.temp0|sed -e  's/.*=//' -e 's/deg//')
 
-notify-send  "Date:$(date '+%a %b %e %r')"
-notify-send  -h string:fgcolor:#ff4444 " Cpu Temp:$temp - Used Mem:$mem"
+notify-send  " $(date '+%a %b %e %r')"
+notify-send  -h string:fgcolor:#ff4444 " Cpu Temp:$temp" 
+notify-send  -h string:fgcolor:#D5D5FF " Used Mem:$mem"
